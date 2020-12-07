@@ -12,9 +12,9 @@ import pandas as pd
 import requests
 
 # Connect the path with your '.env' file name
-dotenv_path = join(dirname(__file__), '.env.txt')
+# dotenv_path = join(dirname(__file__), '.env.txt')
 
-load_dotenv(dotenv_path)
+# load_dotenv(dotenv_path)
 discord_token = os.getenv("DISCORD_TOKEN")
 discord_guild = os.getenv("DISCORD_GUILD")
 
