@@ -20,7 +20,6 @@ discord_guild = os.getenv("DISCORD_GUILD")
 
 
 bot = commands.Bot(command_prefix='!')
-client  = discord.Client()
 
 @bot.event
 async def on_ready():
@@ -28,13 +27,13 @@ async def on_ready():
     print ("I am running on " + bot.user.name)
     print (f'With the ID: {bot.user.id}')
 
-@client.event
+@bot.event
 async def on_member_join(member):
-   await client.get_channel(784995907213066250).send(f"{member.name} has joined")
+   await bot.get_channel(784995907213066250).send(f"{member.name} has joined")
 
-@client.event
+@bott.event
 async def on_member_remove(member):
-   await client.get_channel(784995907213066250).send(f'Goodbye {member.name}, get lost from my Discord server!')
+   await bot.get_channel(784995907213066250).send(f'Goodbye {member.name}, get lost from my Discord server!')
 
 @bot.event
 async def on_member_join1(member):
