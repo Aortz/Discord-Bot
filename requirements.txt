@@ -5,3 +5,4 @@ beautifulsoup4==4.9.3
 pandas
 requests==2.25.0
 discord.py==1.5.1
+asyncio==3.4.3
